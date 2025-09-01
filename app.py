@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-from utils.styles import load_custom_css
-from utils.data_processor import DataProcessor
-from utils.export_manager import ExportManager
+import load_custom_css
+import DataProcessor
+import ExportManager
 
 # Page config
 st.set_page_config(
@@ -255,3 +255,4 @@ st.sidebar.info(f"""
 
 **Export Ready:** {'✅ Yes' if st.session_state.export_ready else '❌ No'}
 """)
+
